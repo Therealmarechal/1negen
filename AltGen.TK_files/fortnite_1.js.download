@@ -1,0 +1,42 @@
+var NumberOfWords = 20
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to 
+// define your random words:
+words[1] = "https://cll.press/qu6rhqFV"
+words[2] = "https://cll.press/FzNR8"
+words[3] = "https://cll.press/6jFdKhi"
+words[4] = "https://cll.press/ZmCTLR"
+words[5] = "https://cll.press/embO"
+words[6] = "https://cll.press/t7HuzDA"
+words[7] = "https://cll.press/4Cy5l8"
+words[8] = "https://cll.press/umvx9JRw"
+words[9] = "https://cll.press/BvENP5tt"
+words[10] = "https://cll.press/pKLjG9o"
+words[11] = "https://cll.press/grmK1t"
+words[12] = "https://cll.press/OhXIfv"
+words[13] = "https://cll.press/TC5pNT1"
+words[14] = "https://cll.press/6nWMael"
+words[15] = "https://cll.press/LErsu"
+words[16] = "https://cll.press/B2Va6"
+words[17] = "https://cll.press/wTO1xkmp"
+words[18] = "https://cll.press/hBhrmc7"
+words[19] = "https://cll.press/SO9v"
+words[20] = "https://cll.press/NcVKR"
+
+
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord(frm) {
+// Generate a random number between 1 and NumberOfWords
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+// Display the word inside the text box
+frm.WordBox.value = words[rnd]
+}
